@@ -26,6 +26,8 @@ public class SecurityConfig {
             .logout()
                 .permitAll();  // Permite logout para todos os usuários
 
+                http.headers().contentSecurityPolicy("script-src 'self'");
+
         return http.build();
     }
 }
