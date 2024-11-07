@@ -1,4 +1,4 @@
-CREATE TABLE Users (
+CREATE TABLE Usuario (
     id_usuario SERIAL PRIMARY KEY,
     nome VARCHAR(100),
     email VARCHAR(100) UNIQUE,
@@ -11,7 +11,7 @@ CREATE TABLE Onibus (
     modelo VARCHAR(50),
     placa VARCHAR(20),
     coordenador_id INT,
-    FOREIGN KEY (coordenador_id) REFERENCES Users(id_usuario)
+    FOREIGN KEY (coordenador_id) REFERENCES Usuario(id_usuario)
 );
 
 CREATE TABLE Poltrona (
