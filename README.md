@@ -50,7 +50,7 @@ O projeto utiliza o [PostgresSQL](https://www.postgresql.org/) como banco de dad
 ## Entidades e relacionamentos:
 
 ### Entidades (Tabelas)
-- Users: Representa os usuários do sistema, que podem ser administradores ou coordenadores.
+- Usuario: Representa os usuários do sistema, que podem ser administradores ou coordenadores.
 - Onibus: Representa os ônibus da frota.
 - Poltrona: Representa as poltronas dentro de cada ônibus.
 - Passageiro: Representa os passageiros que utilizam o serviço.
@@ -58,7 +58,7 @@ O projeto utiliza o [PostgresSQL](https://www.postgresql.org/) como banco de dad
 - ListaEspera: Representa a lista de espera para as passagens.
 - Embarque: Representa o processo de embarque dos passageiros.
 ### Relacionamentos
-- Users e Onibus: Um coordenador (tipo de usuário) é responsável por um ou mais ônibus. Relação de um para muitos.
+- usuario e Onibus: Um coordenador (tipo de usuário) é responsável por um ou mais ônibus. Relação de um para muitos.
 - Onibus e Poltrona: Um ônibus possui muitas poltronas. Relação de um para muitos.
 - Poltrona e Passagem: Uma poltrona pode ser reservada por uma única passagem. Relação de um para um.
 - Passageiro e Passagem: Um passageiro pode comprar várias passagens. Relação de um para muitos.
