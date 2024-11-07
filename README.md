@@ -24,9 +24,9 @@ Este projeto é uma API construída usando **Java, Java Spring, Migrações Flyw
 A API fornece os seguintes endpoints:
 
 ```markdown
-GET /product - Recupera uma lista de todos os produtos. (todos os usuários autenticados)
+GET /- Recupera uma lista de todos os *. (todos os usuários autenticados)
 
-POST /product - Registra um novo produto (acesso ADMIN requerido).
+POST / - Registra um novo *, (acesso ADMIN requerido).
 
 POST /auth/login - Realiza login no aplicativo.
 
